@@ -34,6 +34,8 @@ layout.scrollDirection = .vertical
 - center the item in focus
 - allow the previous item to be visible
 
+![](Media/spacing.png)
+
 set the following property
 ```swift
 layout.sectionInset = 
