@@ -54,6 +54,7 @@
 		A2EB7727230075F700FD0C79 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A2EB7728230075F700FD0C79 /* AppDelegate.swift */,
 				A2EB772A230075F700FD0C79 /* ViewController.swift */,
 				A2EB77412300809100FD0C79 /* PagingCollectionViewLayout.swift */,
 				A2EB773B2300772B00FD0C79 /* Resources */,
@@ -64,7 +65,6 @@
 		A2EB773B2300772B00FD0C79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A2EB7728230075F700FD0C79 /* AppDelegate.swift */,
 				A2EB772F230075F800FD0C79 /* Assets.xcassets */,
 				A2EB7731230075F800FD0C79 /* LaunchScreen.storyboard */,
 				A2EB7734230075F800FD0C79 /* Info.plist */,
