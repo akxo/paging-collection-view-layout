@@ -23,6 +23,11 @@ instantiate a collection view using the layout property
 ```swift
 let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
 ```
+for snappy scrolling set the following
+```swift
+collectionView.decelerationRate = .fast
+```
+
 #### note:
 ~~collectionView.isPagingEnabled = true~~
 ## optional customization
@@ -30,6 +35,9 @@ let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout
 ```swift
 layout.scrollDirection = .vertical
 ```
+or since the default is vertical
+
+~~layout.scrollDirection = .horizontal~~
 ### section spacing
 - center the item in focus
 - allow the previous item to be visible
@@ -42,3 +50,11 @@ layout.sectionInset =
 ```
 - **horizontal collection view -** set left and right insets
 - **vertical collection view -** set top and bottom insets
+
+### skipping items
+
+![](Media/example-skip.gif)
+
+`layout.velocityThresholdPerPage` determines the velocity needed to skip an item (default = 2.0)
+- a non zero swipe velocity will result in the collection view scrolling to the prev/next item
+- the number of items skipped = swipe velocity / velocityThresholdPerPage
