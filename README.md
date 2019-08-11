@@ -1,6 +1,8 @@
 # paging-collection-view-layout
 custom collection view layout that allows you to page by cell, not screen
+
 ![](Media/example.gif)
+
 ## installation
 
 add `PagingCollectionViewLayout.swift` to your project
