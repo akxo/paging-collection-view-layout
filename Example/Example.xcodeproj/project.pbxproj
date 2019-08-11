@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		A2EB7729230075F700FD0C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB7728230075F700FD0C79 /* AppDelegate.swift */; };
 		A2EB772B230075F700FD0C79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB772A230075F700FD0C79 /* ViewController.swift */; };
-		A2EB772E230075F700FD0C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB772C230075F700FD0C79 /* Main.storyboard */; };
 		A2EB7730230075F800FD0C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EB772F230075F800FD0C79 /* Assets.xcassets */; };
 		A2EB7733230075F800FD0C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB7731230075F800FD0C79 /* LaunchScreen.storyboard */; };
+		A2EB77422300809100FD0C79 /* PagingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB77412300809100FD0C79 /* PagingCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2EB7725230075F700FD0C79 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2EB7728230075F700FD0C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2EB772A230075F700FD0C79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A2EB772D230075F700FD0C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2EB772F230075F800FD0C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2EB7732230075F800FD0C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2EB7734230075F800FD0C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EB77412300809100FD0C79 /* PagingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		A2EB7727230075F700FD0C79 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				A2EB7728230075F700FD0C79 /* AppDelegate.swift */,
 				A2EB772A230075F700FD0C79 /* ViewController.swift */,
-				A2EB772C230075F700FD0C79 /* Main.storyboard */,
+				A2EB77412300809100FD0C79 /* PagingCollectionViewLayout.swift */,
+				A2EB773B2300772B00FD0C79 /* Resources */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		A2EB773B2300772B00FD0C79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB7728230075F700FD0C79 /* AppDelegate.swift */,
 				A2EB772F230075F800FD0C79 /* Assets.xcassets */,
 				A2EB7731230075F800FD0C79 /* LaunchScreen.storyboard */,
 				A2EB7734230075F800FD0C79 /* Info.plist */,
 			);
-			path = Example;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +132,6 @@
 			files = (
 				A2EB7733230075F800FD0C79 /* LaunchScreen.storyboard in Resources */,
 				A2EB7730230075F800FD0C79 /* Assets.xcassets in Resources */,
-				A2EB772E230075F700FD0C79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +144,13 @@
 			files = (
 				A2EB772B230075F700FD0C79 /* ViewController.swift in Sources */,
 				A2EB7729230075F700FD0C79 /* AppDelegate.swift in Sources */,
+				A2EB77422300809100FD0C79 /* PagingCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A2EB772C230075F700FD0C79 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2EB772D230075F700FD0C79 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2EB7731230075F800FD0C79 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PQJ4KYE37;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = Example/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PQJ4KYE37;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = Example/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
