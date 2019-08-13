@@ -43,7 +43,8 @@ or since the default is vertical
 - center the item in focus
 - allow the previous item to be visible
 
-![](Media/spacing.png)                                        ![](Media/spacing-vertical.png)
+![](Media/spacing.png)
+![](Media/spacing-vertical.jpg)
 
 set the following property
 ```swift
