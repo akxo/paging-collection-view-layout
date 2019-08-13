@@ -32,6 +32,7 @@ collectionView.decelerationRate = .fast
 ~~collectionView.isPagingEnabled = true~~
 ## optional customization
 ### vertical scrolling
+![](Media/example-vertical.gif)
 ```swift
 layout.scrollDirection = .vertical
 ```
@@ -42,7 +43,7 @@ or since the default is vertical
 - center the item in focus
 - allow the previous item to be visible
 
-![](Media/spacing.png)
+![](Media/spacing.png)                                        ![](Media/spacing-vertical.png)
 
 set the following property
 ```swift
