@@ -3,9 +3,20 @@ custom collection view layout that allows you to page by cell, not screen
 
 ![](Media/example.gif)
 ## installation
+### cocoapods
+use [cocoapods](http://cocoapods.org/) to install `PagingCollectionViewLayout` by adding it to your `Podfile`:
 
+```ruby
+platform :ios, '9.0'
+use_frameworks!
+pod 'PagingCollectionViewLayout'
+```
+
+``` swift
+import PagingCollectionViewLayout
+```
+### manual
 add `PagingCollectionViewLayout.swift` to your project
-
 ## usage
 
 instantiate a layout property
