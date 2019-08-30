@@ -17,6 +17,7 @@ class PagingCollectionViewLayout: UICollectionViewFlowLayout {
         
         let pageLength: CGFloat
         let approxPage: CGFloat
+        let currentPage: CGFloat
         let speed: CGFloat
         
         if scrollDirection == .horizontal {
@@ -29,7 +30,13 @@ class PagingCollectionViewLayout: UICollectionViewFlowLayout {
             speed = velocity.y
         }
         
-        let currentPage = (speed < 0) ? ceil(approxPage) : floor(approxPage)
+        if speed < 0 {
+            currentPage = ceil(approxPage)
+        } else if speed > 0 {
+            currentPage = floor(approxPage)
+        } else {
+            currentPage = round(approxPage)
+        }
         
         guard speed != 0 else {
             if scrollDirection == .horizontal {
