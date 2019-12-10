@@ -11,6 +11,7 @@ import UIKit
 class PagingCollectionViewLayout: UICollectionViewFlowLayout {
     
     var velocityThresholdPerPage: CGFloat = 2
+    var numberOfItemsPerPage: CGFloat = 1
     
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         guard let collectionView = collectionView else { return proposedContentOffset }
@@ -21,11 +22,11 @@ class PagingCollectionViewLayout: UICollectionViewFlowLayout {
         let speed: CGFloat
         
         if scrollDirection == .horizontal {
-            pageLength = self.itemSize.width + self.minimumLineSpacing
+            pageLength = (self.itemSize.width + self.minimumLineSpacing) * numberOfItemsPerPage
             approxPage = collectionView.contentOffset.x / pageLength
             speed = velocity.x
         } else {
-            pageLength = self.itemSize.height + self.minimumLineSpacing
+            pageLength = (self.itemSize.height + self.minimumLineSpacing) * numberOfItemsPerPage
             approxPage = collectionView.contentOffset.y / pageLength
             speed = velocity.y
         }
