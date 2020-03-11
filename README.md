@@ -71,3 +71,11 @@ layout.sectionInset =
 `layout.velocityThresholdPerPage` determines the velocity needed to skip an item (default = 2.0)
 - a non zero swipe velocity will result in the collection view scrolling to the prev/next item
 - the number of items skipped = swipe velocity / velocityThresholdPerPage
+
+### multiple items per page
+
+![](Media/example-multiple-items-per-page.gif)
+
+```swift
+layout.numberOfItemsPerPage = 2
+```
